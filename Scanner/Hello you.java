@@ -7,5 +7,6 @@ class Hello {
         System.out.print("Hola ");
         System.out.print(nom);
         System.out.println("!");
+        sc.close();
     }
 }

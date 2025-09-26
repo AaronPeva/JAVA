@@ -12,6 +12,6 @@ class Autobuses {
         int r3 = r1 + r2;
 
         System.out.print(r3);
-
+        sc.close();
     }
 }

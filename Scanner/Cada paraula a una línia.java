@@ -13,5 +13,6 @@ class CadaParaula {
         System.out.println(text3);
         String text4 = sc.next();
         System.out.println(text4);
+        sc.close();
         }
     }

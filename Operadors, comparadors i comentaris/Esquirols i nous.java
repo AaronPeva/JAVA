@@ -9,6 +9,6 @@ class EsquirolsNous {
         int resultado = n % e;
 
         System.out.print(resultado);
-
+        sc.close();
     }
 }

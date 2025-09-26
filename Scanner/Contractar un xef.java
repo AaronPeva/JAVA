@@ -9,6 +9,6 @@ class Contractar {
         sc.nextLine();  
         String tipo = sc.nextLine();
         System.out.print("El formulari de " + nom + " s'ha completat. Et contactarem si necessitem un xef de cuina " + tipo + ".");
-
+        sc.close();
     }
 }

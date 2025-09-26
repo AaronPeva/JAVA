@@ -15,5 +15,6 @@ class Carta {
         System.out.println(nom);
         System.out.println("");
         System.out.print("El principal objectiu de la present carta...");
+        sc.close();
     }
 }

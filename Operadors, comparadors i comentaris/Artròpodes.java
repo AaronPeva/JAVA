@@ -3,27 +3,23 @@ class Artròpodes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-       int I = 6;
-       int A = 8;
-       int C = 10;
-       int M1 = 2;
-       int M2 = 4;
-       int S1 = 0;
-       int S2 = 0;
-       
-       
-       
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
+
         int d = sc.nextInt();
-        int e = sc.nextInt();
+        int S1 = sc.nextInt();
+
         int f = sc.nextInt();
-        int g = sc.nextInt();
-       
+        int S2 = sc.nextInt();
 
+        int I = 6 * a;
+        int A = 8 * b;
+        int C = 10 * c;
+        int M1 = 2 * d * S1;
+        int M2 = 4 * f * S2;
 
-        System.out.print(resultado);
-
+        System.out.print(I + A + C + M1 + M2);
+        sc.close();
     }
 }

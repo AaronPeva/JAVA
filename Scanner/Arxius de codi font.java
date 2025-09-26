@@ -20,5 +20,6 @@ class Codi {
         System.out.println(tip3 + " " + nom3);
         System.out.println(tip2 + " " + nom2);
         System.out.println(tip1 + " " + nom1);
+        sc.close();
     }
 }
