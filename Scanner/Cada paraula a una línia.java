@@ -1,3 +1,4 @@
+package Scanner;
 import java.util.Scanner;
 class CadaParaula {
     public static void main(String[] args) {
