@@ -2,30 +2,38 @@ import java.util.Scanner;
 
 class Paella {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
-        // Leer datos de entrada
-        int comensales = scanner.nextInt();
-        float precioArrosPorKg = scanner.nextFloat();
-        float precioGambasPorKg = scanner.nextFloat();
+        int C = sc.nextInt(); // Comensals cantidad
+        float A = sc.nextFloat(); // Arroz precio kg
+        float G = sc.nextFloat(); // Gambas precio kg
         
         // Calcular cantidades necesarias
-        // Por cada 4 personas: 0.5 kg arroz y 0.25 kg gambas
-        float kgArros = (comensales * 0.5f) / 4.0f;
-        float kgGambas = (comensales * 0.25f) / 4.0f;
+        // Por cada 4 personas: 0.5 kg arroz, 0.25 kg gambas
+        float kg_arroz = (C / 4.0f) * 0.5f;
+        float kg_gambas = (C / 4.0f) * 0.25f;
         
         // Calcular costos
-        float costoArros = kgArros * precioArrosPorKg;
-        float costoGambas = kgGambas * precioGambasPorKg;
-        float costoTotal = costoArros + costoGambas;
+        float costo_arroz = kg_arroz * A;
+        float costo_gambas = kg_gambas * G;
+        float costo_total = costo_arroz + costo_gambas;
         
-        // Mostrar resultados
-        System.out.println(kgArros + " kg arros");
-        System.out.println(kgGambas + " kg gambes");
-        System.out.println(costoArros + " euros arros");
-        System.out.println(costoGambas + " euros gambes");
-        System.out.println("TOTAL: " + costoTotal + " euros");
+        // Imprimir resultados con formato correcto
+        System.out.println(formatNumber(kg_arroz) + " kg arros");
+        System.out.println(formatNumber(kg_gambas) + " kg gambes");
+        System.out.println(formatNumber(costo_arroz) + " euros arros");
+        System.out.println(formatNumber(costo_gambas) + " euros gambes");
+        System.out.println("TOTAL: " + formatNumber(costo_total) + " euros");
         
-        scanner.close();
+        sc.close();
+    }
+    
+    // Función para formatear números (eliminar .0 innecesario)
+    public static String formatNumber(float num) {
+        if (num == (int)num) {
+            return String.valueOf((int)num);
+        } else {
+            return String.valueOf(num);
+        }
     }
 }
