@@ -11,5 +11,6 @@ class Contractar {
     
         boolean solucion = java && experiencia >=1 || phyton && experiencia2 >=3;
         System.out.println(solucion);
+        sc.close();
     }
 }

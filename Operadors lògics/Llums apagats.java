@@ -9,5 +9,6 @@ class Llums {
       boolean llums4 = sc.nextBoolean();
       boolean solucion =  !llums && !llums2 && !llums3 && !llums4;
       System.out.println(solucion);
+      sc.close();
     }
 }
