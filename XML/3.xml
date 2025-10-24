@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employers>
+
+    <employer id ="1">
+        <name>Pepe</name>
+        <gender>Male</gender>
+        <age>28</age>
+        <hiringDate>06/11/2022</hiringDate>
+    </employer>
+
+    <employer id ="2">
+        <name>Hornet</name>
+        <gender>Female</gender>
+        <age>25</age>
+        <hiringDate>14/2/2019</hiringDate>
+    </employer>
+
+    <employer id ="3">
+        <name>Jorch</name>
+        <gender>Male</gender>
+        <age>19</age>
+        <hiringDate>21/1/2006</hiringDate>
+    </employer>
+
+</employers>
