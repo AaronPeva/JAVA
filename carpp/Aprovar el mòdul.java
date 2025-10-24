@@ -1,3 +1,4 @@
+package carpp;
 import java.util.Scanner;
 
 class aprovar {
@@ -13,9 +14,8 @@ class aprovar {
         int P8 = sc.nextInt();
         int P9 = sc.nextInt();
 
-        P1
-        boolean UF1 = P3 >= 7 ||  
-        System.out.print(r);
+        boolean UF1 = P3 >= 7;
+        System.out.print(UF1);
         sc.close();
     }
 }
